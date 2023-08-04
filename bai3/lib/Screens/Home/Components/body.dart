@@ -10,13 +10,15 @@ class Body extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(
-            "Burger".toUpperCase(),
-            style: Theme.of(context).textTheme.displayLarge?.copyWith(
-              color: kTextcolor,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+          FittedBox(
+              fit: BoxFit.fitWidth,
+              child: Text(
+                "Burger".toUpperCase(),
+                style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                      color: kTextcolor,
+                      fontWeight: FontWeight.bold,
+                    ),
+              )),
           Text(
             "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit, sed do eiusmod tempor \nincididunt ut labor",
             style: TextStyle(
