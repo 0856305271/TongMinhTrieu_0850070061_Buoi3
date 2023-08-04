@@ -9,8 +9,8 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        margin: const EdgeInsets.all(20),
-        padding: const EdgeInsets.all(20),
+        margin: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(46),
